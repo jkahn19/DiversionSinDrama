@@ -7,21 +7,25 @@
     
     <title>D_S</title>
     
-    <link rel="stylesheet" href="./css/mobile.css" >
-    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 760px)">
+    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 719px)">
+    <link rel="stylesheet" href="./css/table.css" media="screen and (min-width: 720px) and (max-width: 1023px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1024px)">
     
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon"/>
+    <!-- <script src="https://kit.fontawesome.com/dbeaa0d1a7.js" crossorigin="anonymous"></script> -->
+
     
-    <script src="https://kit.fontawesome.com/dbeaa0d1a7.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <figure class="menu">
-            <i class="fas fa-bars"></i>
+            <!-- <i class="fas fa-bars"></i> -->
+            <span class="material-icons md-36">menu</span>
         </figure>
         
         <div class="gremio">
-            <h1>D_S</h1>
-            <h1>Diversión Sin Drama</h1>
+            <h1>[D_S] Diversión Sin Drama</h1>
         </div>
 
         <figure class="gremio-logo">
@@ -29,80 +33,78 @@
         </figure>
     </header>
     <main>
-        <div class="Hero">
-            <figure>
-                <img src="../img/gremio.png" alt="logo del gremio">
+        <figure class="logo-main">
+            <img src="../img/gremio.png" alt="logo del gremio">
+        </figure>
+        <div class="lider-contenedor">
+            <figure class="logo-lider">
+                <img src="../img/lider.png" alt="logo del lider">
             </figure>
-            <div class="lider-contenedor">
-                <div class="lider">
-                    <figure>
-                        <img src="../img/lider.png" alt="logo del lider">
-                    </figure>
-                    <h2>Lider: Vainilla</h2>
-                </div>
-                <p>Crecemos en conjuntos</p>
+            <div class="lider">
+                <h2>Lider: Vainilla</h2>
             </div>
-        </div>
-        
-        <div class="Descripcion">
-            <div class="Descripcion-contenido">
-                <div class="Descripcion-titulo">
-                    <p>¡Bienvenid@s a [D_S]Diversión sin Dramas!</p>
-                </div>
-                <div class="Descripcion-perfil">
-                    <p>Somos un equipo que se apoya y crece en conjunto</P>
-                    <P>Jugadores activos que fomenta el respeto y colaboración en equipo</p>
-                </div>
-                <div class="Descripcion-aliados">    
-                    <p>Aliados: [TD1] / [UIN]  ---  NAP: [aM1]/[H@f]/[F&P]/[Fhy]</p>
-                </div>
-            </div>
-            <div class='Descripcion-emblema'>
-                <figure>
-                    <img src="../img/campeonato.png" alt="">
-                </figure>
-                <figure>
-                    <img src="../img/arena.png" alt="">
-                </figure>
-                <figure>
-                    <img src="../img/fdg.png" alt="">
-                </figure>
+            <div class="frase-gremio">
+                <p >Crecemos en conjuntos</p>
             </div>
         </div>
     </main>
-    <hr>
-    <section>
-        <div class="Tarjeta">
-            <a class="Tarjeta-contenedor" href="./html/caceria.html">
-                <figure>
-                    <img src="../img/logo.png" alt="">
-                </figure>
-                <p>Cacería de Monstruos</p>
-            </a>
-        </div>
         
-        <div class="Tarjeta">
-            <a class="Tarjeta-contenedor" href="#">
-                <figure>
-                    <img src="../img/heroes.png" alt="">
-                </figure>
-                <p>Armaduras</p>
-            </a>    
+    <div class="Descripcion">
+        <div class="Descripcion-contenido">
+            <div class="Descripcion-titulo">
+                <p>¡Bienvenid@s a [D_S]Diversión sin Dramas!</p>
+            </div>
+            <div class="Descripcion-perfil">
+                <p>Somos un equipo que se apoya y crece en conjunto</P>
+                <P>Jugadores activos que fomenta el respeto y colaboración en equipo</p>
+            </div>
+            <div class="Descripcion-aliados">    
+                <p>Aliados: [TD1] / [UIN]  ---  NAP: [aM1]/[H@f]/[F&P]/[Fhy]</p>
+            </div>
         </div>
+        <div class='Descripcion-emblema'>
+            <figure>
+                <img src="../img/campeonato.png" alt="">
+            </figure>
+            <figure>
+                <img src="../img/arena.png" alt="">
+            </figure>
+            <figure>
+                <img src="../img/fdg.png" alt="">
+            </figure>
+        </div>
+    </div>
+    <hr>
+    <section class="Tarjeta">
+        <a class="Tarjeta-contenedor" href="./html/caceria.html">
+            <figure class="Tarjeta-logo">
+                <img src="../img/logo.png" alt="">
+            </figure>
+            <div class="Tarjeta-titulo">
+                <p>Cacería de Monstruos</p>
+            </div>
+        </a>
+        
+        <a class="Tarjeta-contenedor" href="#">
+            <figure class="Tarjeta-logo">
+                <img src="../img/heroes.png" alt="">
+            </figure>
+            <div class="Tarjeta-titulo">
+                <p>Armaduras</p>
+            </div>
+        </a>    
     </section>
     <footer>
         <div class="redSocial">
-            <div>
-                <i class="fab fa-telegram"></i>
-            </div>
-            <p>Telegram</p>
+            <span class="material-icons telegram">telegram</span>
         </div>
 
         <div class="redSocial">
-            <div>
-                <i class="fab fa-discord"></i>
-            </div>
-            <p>Discord</p>
+            <span class="material-icons discord">discord</span>
+        </div>
+
+        <div class="Agradecimiento">
+            Hecha con <span class="material-icons md-16">favorite</span> por [D_S]
         </div>
     </footer>
 </body>
