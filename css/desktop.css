@@ -20,8 +20,8 @@ html {
 body {
     display: grid;
     width: 100vw;
-    height: 100vh;
-    grid-template-rows: 80px auto auto 80px;
+    height: 100%;
+    grid-template-rows: 80px 250px calc(100vh - 410px) 80px;
     grid-template-columns: 4fr 2fr;
     align-content: space-between;
 }
@@ -29,7 +29,7 @@ body {
 header {
     display: grid;
     grid-column: 1 / 4;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 60px 4fr 1fr;
     width: 100vw;
     background-color: var(--dark-cyan);
 }
@@ -54,7 +54,7 @@ header {
     display: grid;
     place-content: center;
     text-align: center;
-    min-width: 50px;
+    min-width: 60px;
 }
 
 .gremio-logo img {
@@ -145,6 +145,7 @@ main {
     grid-template: 1fr/ 1fr 1fr 1fr;
     justify-content: space-around;
     align-items: center;
+    height: 100px;
 }
 
 
@@ -218,6 +219,7 @@ footer {
     grid-template-areas: 
         "telegram discord Agradecimiento" ;
     grid-template-columns: 38px 38px auto;
+    align-self: end;
     align-items: center;
     gap: 8px;
     margin-top: 20px;
