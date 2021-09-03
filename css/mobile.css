@@ -31,7 +31,7 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 60px 4fr 1fr;
     width: 100vw;
     background-color: var(--dark-cyan);
 }
@@ -39,7 +39,6 @@ header {
 .menu {
     display: grid;
     place-content: center;
-    min-width: 38px;
 }
 
 .material-icons.md-36 {
@@ -48,7 +47,6 @@ header {
 
 .gremio {
     display: grid;
-    /* display: none; */
     place-content: center;
     text-align: center;
 }
@@ -57,7 +55,7 @@ header {
     display: grid;
     place-content: center;
     text-align: center;
-    min-width: 50px;
+    min-width: 60px;
 }
 
 .gremio-logo img {
