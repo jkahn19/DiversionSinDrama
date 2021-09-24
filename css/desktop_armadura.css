@@ -1,0 +1,258 @@
+:root{
+    --dark-cyan: #015249;
+    --soft-cyan: #77C9D4;
+    --cyan: #57BC90;
+    --gray: #A5A5AF;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+
+body {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 80px auto 80px;
+    grid-template-columns: 4fr 2fr;
+}
+
+a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+a::after{
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    grid-template-columns: 60px 4fr 1fr;
+    background-color: var(--dark-cyan);
+}
+
+.menu {
+    display: grid;
+    place-items: center;
+    min-width: 38px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.gremio {
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.gremio-logo {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    min-width: 60px;
+}
+
+.gremio-logo img {
+    width: 52px;
+    height: auto;
+}
+
+main {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    grid-template: auto 1fr / 1fr;
+    place-content: center;
+}
+
+.botones {
+    display: grid;
+    height: auto;
+    margin: 10px 0;
+    padding: 0 10px;
+    grid-template-columns: repeat(auto-fit, 90px);
+    grid-gap: 10px;
+    place-content: center;
+}
+
+.boton {
+    width: 90px;
+    height: 20px;
+    background-color: var(--cyan);
+    border: black 1px;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.Armadura-contenedor {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-gap: 20px;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    align-items: center;
+}
+
+.Armadura {
+    display: grid;
+    width: auto;
+    height: min-content;
+    min-width: 240px;
+    grid-template: 30px repeat(4,1fr) / repeat(2,1fr);
+    grid-gap: 15px;
+    place-items: center;
+
+}
+
+.Armadura-Nombre {
+    font-size: 2rem;
+    font-style: bold;
+    color: black;
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    place-items: center;
+}
+
+.parte {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    min-width: 110px;
+    min-height: 80px;
+    max-width: 250px;
+    background-color: var(--gray);
+    grid-template: 1fr 3fr / auto 60px;
+    place-items: center;
+    border-radius: 10px;
+}
+
+.seccion {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+}
+
+.nombre {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    font-size: 1.3rem;
+}
+
+.imagen{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.imagen img{
+    width: 50px;
+    height: 50px;
+}
+
+.investigacion,
+.caceria,
+.ataque-mix,
+.ataque-lvl60 {
+    display: none;
+}
+
+hr {
+    display: none;
+    margin: auto 20px;
+    width: 1px;
+    height: 80%;
+}
+
+.Tarjeta {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    grid-template-columns: repeat(auto-fil, 250px);
+    gap: 30px;
+    place-content: center;
+}
+
+.Tarjeta-contenedor {
+    display: grid;
+    width: 250px;
+    height: 100px;
+    padding: 0 30px;
+    grid-template-columns: 1fr 3fr;
+    place-items: center;
+    border-radius: 25px;
+    background-color: var(--soft-cyan);
+    color: black;
+}
+
+.Tarjeta-contenedor::after {
+    color: black;
+}
+
+.Tarjeta-logo {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+}
+
+.Tarjeta-logo img{
+    width: 75px;
+    height: 75px;
+}
+
+.Tarjeta-contenedor p {
+    font-size: 2rem;
+}
+
+.link-caceria {
+    display: none;
+}
+
+footer {
+    display: grid;
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    grid-template-columns: 38px 38px auto;
+    grid-template-areas:
+        "telegram discord Agradecimiento" ;
+    grid-gap: 8px;
+    align-self: end;
+    align-items: center;
+    background-color: var(--dark-cyan);
+    font-size: 1.4rem;
+}
+
+.redSocial {
+    display: grid;
+    justify-self: center;
+    justify-items: start;
+    min-width: 38px;
+}
+
+.material-icons.telegram, .material-icons.discord {
+    font-size: 36px;
+}
+
+.Agradecimiento {
+    font-size: 1.4rem;
+    text-align: right;
+    vertical-align: middle;
+}
