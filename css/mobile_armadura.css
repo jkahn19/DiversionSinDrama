@@ -101,8 +101,6 @@ main {
     width: 100vw;
     height: 450px;
     grid-gap: 20px;
-    grid-auto-flow: column;
-    overflow: hidden;
 }
 
 .Armadura {
